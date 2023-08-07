@@ -1,0 +1,31 @@
+1. Use the reference of YouTube[YT] :
+S1 : A new user account is created in Gmail/YT
+S2 : The user logs in to YT using the account
+S3 : Create a subscription service in YT
+S4 : User :: Create a channel
+S5 :: user --> channel --> uploads a video
+
+
+
+S1: user --> Api_Gateway (Publisher) --> Account_Creation_Service (Subscriber) 
+	Account_Creation_Service (Publisher) --> DB_Service (Subscriber) --> Account_Created
+	
+S2: user --> Api_Gateway (Publisher) --> Authentication_And_Authorization_Service (Subscriber)
+	Authentication_And_Authorization_Service (Publisher) --> DB_Service (Subscriber) (Request to get user details like username, password hash, roles etc.)
+	DB_Service (Publisher) --> Authentication_And_Authorization_Service(Subscriber) (Return user details)
+	
+S3: user --> Api_Gateway (Publisher) --> Subscription_Service (Subscriber) (Example: YouTube Premium)
+	Subscription_Service (Publisher) --> Billing_Service (Subscriber)  (If not free)
+	Billing_Service (Publisher) --> Payment Gateway (Subscriber)
+	Subscription_Service (Subscriber) --> DB_Service (Subscriber) --> Update subscription details for account
+	Billing_Service (Publisher) --> DB_Service (Subscriber) --> Update billing details for account
+	
+S4: user --> Api_Gateway (Publisher) --> Channel_Creation_Service (Subscriber)
+	Channel_Creation_Service (Publisher) --> DB_Service (Subscriber) --> Channel_Created
+	
+S5: user --> Api_Gateway (Publisher) --> Uploader_Service(Subscriber)
+	Uploader_Service (Publisher) --> DB_Service (Subscriber) --> Video uploaded
+	
+Additional:
+	Alarm/Notifier_Service (Publisher) --> Notification_Service (Subscriber)
+	All services (Publisher) --> Logging_Service (Subscriber)https://martinfowler.com/
