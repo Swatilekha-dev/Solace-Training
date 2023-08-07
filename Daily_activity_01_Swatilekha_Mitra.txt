@@ -5,7 +5,7 @@ S3 : Create a subscription service in YT
 S4 : User :: Create a channel
 S5 :: user --> channel --> uploads a video
 
-
+Ans. 
 
 S1: user --> Api_Gateway (Publisher) --> Account_Creation_Service (Subscriber) 
 	Account_Creation_Service (Publisher) --> DB_Service (Subscriber) --> Account_Created
