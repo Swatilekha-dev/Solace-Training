@@ -14,11 +14,8 @@ endpoints ::  v17.0/me
 - What are the business utlities of the API's 
 Ans. Application Programming Interfaces (APIs) are a set of software that connects two or more systems/application to perform specific operations.
 
+8. Write a NodeJS code for :
 
+a. Create a dummy calculator :: Addition/Subtraction/Division [check for division by 0]
+b. parse a sample XML file using NodeJS and display the response in browser.
 
-
-
-6. What is an endpoint [NOT API endpoints --> Queue endpoint + topic endpoint]
-
-
-7.What is High Availability Architecture? what happens in High Availability Architecture
