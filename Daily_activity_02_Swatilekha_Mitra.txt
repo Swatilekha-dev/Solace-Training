@@ -1,3 +1,7 @@
+//All the screenshot is in this link :
+https://docs.google.com/document/d/1AjLfoLU1YDefkz9hgk4R1AoYc0lM-k-BHxPgVkxCRPY/edit?usp=sharing
+
+
 Q1. Refer FB + LinkedIn API's :: Try some of the API's in Postman
 
 - Which API referred
@@ -132,8 +136,6 @@ fs.readFile('sample.xml', (err, data) => {
 </employees>
 
 
-//All the screenshot is in this link :
-https://docs.google.com/document/d/1AjLfoLU1YDefkz9hgk4R1AoYc0lM-k-BHxPgVkxCRPY/edit?usp=sharing
 
 
 
