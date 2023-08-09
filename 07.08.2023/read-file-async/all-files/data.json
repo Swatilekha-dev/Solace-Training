@@ -1,0 +1,19 @@
+{
+  "name": "John Doe",
+  "age": 30,
+  "email": "john@example.com",
+  "address": {
+    "street": "C V RAMAN NAGAR",
+    "city": "BENGALURU",
+    "country": "INDIA"
+  },
+  "hobbies": ["dancing", "traveling", "cooking"],
+  "friends": [
+    {
+      "name": "ARIJIT"
+    },
+    {
+      "name": "SAYANTANEE"
+    }
+  ]
+}
